@@ -1,0 +1,28 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	transition: transform 0.3s ease-in-out;
+}
+
+.table.location-hidden th:last-child,
+.table.location-hidden td:last-child {
+	display: none;
+}
+
+.table.location-hidden {
+	transform: translateX(var(--sidebar-width));
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.body tr {
+	cursor: pointer;
+}
+
+.body tr:hover {
+	background-color: plum;
+}

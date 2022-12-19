@@ -15,7 +15,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Table onRowClick={handleRowClick} />
+			<Table onRowClick={handleRowClick} isSidebarOpen={isOpen} />
 
 			<Sidebar
 				id={selectedId as string}

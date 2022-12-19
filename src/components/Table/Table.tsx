@@ -26,7 +26,7 @@ const Table: React.FC<{
 	return (
 		<table
 			className={`${styles.table} ${
-				isSidebarOpen && styles['location-hidden']
+				isSidebarOpen ? styles['location-hidden'] : ''
 			}`}
 		>
 			<thead className={styles.head}>
