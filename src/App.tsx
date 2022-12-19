@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Table } from './components/Table';
 import './App.css';
@@ -12,6 +12,16 @@ function App() {
 		setSelectedId(id);
 		setIsOpen(true);
 	};
+
+	const showMobileScreenAlert = () => {
+		if (window.innerWidth < 768) {
+			alert('This app is not optimized for mobile screens');
+		}
+	};
+
+	useEffect(() => {
+		showMobileScreenAlert();
+	}, []);
 
 	return (
 		<div className="App">
