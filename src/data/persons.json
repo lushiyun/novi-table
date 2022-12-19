@@ -1,0 +1,32 @@
+[
+	{
+		"id": "1",
+		"name": "John",
+		"email": "john@gmail.com",
+		"age": 20,
+		"occupation": "student",
+		"number_of_cats": 2,
+		"daily_water_consumption": 2.5,
+		"location": "New York"
+	},
+	{
+		"id": "2",
+		"name": "Doe",
+		"email": "doe@gmail.com",
+		"age": 25,
+		"occupation": "sales",
+		"number_of_cats": 1,
+		"daily_water_consumption": 1,
+		"location": "San Francisco"
+	},
+	{
+		"id": "3",
+		"name": "Mary",
+		"email": "mary@gmail.com",
+		"age": 20,
+		"occupation": "student",
+		"number_of_cats": 2,
+		"daily_water_consumption": 2.5,
+		"location": "New York"
+	}
+]
