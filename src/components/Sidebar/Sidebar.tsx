@@ -10,7 +10,7 @@ interface AdditionalInfo {
 	favorite_color: string;
 	security_question: string;
 	security_answer: string;
-	education_level: string;
+	education_level: string; 
 }
 
 interface TitleFieldMap {
