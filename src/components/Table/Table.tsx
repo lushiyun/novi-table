@@ -1,19 +1,10 @@
 import React from 'react';
 
+import { Row } from './Row';
+
 import persons from '../../data/persons.json';
 
-interface Person {
-	id: string;
-	name: string;
-	email: string;
-	age: number;
-	occupation: string;
-	numOfCats: number;
-	dailyWaterConsumption: number;
-	location: string;
-}
-
-const personTitles = [
+const titles = [
 	'Name',
 	'Email',
 	'Age',
@@ -34,7 +25,7 @@ const Table: React.FC<{
 		<table>
 			<thead>
 				<tr>
-					{personTitles.map((title) => (
+					{titles.map((title) => (
 						<th>{title}</th>
 					))}
 				</tr>
@@ -42,15 +33,11 @@ const Table: React.FC<{
 
 			<tbody>
 				{persons.map((person) => (
-					<tr onClick={() => selectRow(person.id)}>
-						<td>{person.name}</td>
-						<td>{person.email}</td>
-						<td>{person.age}</td>
-						<td>{person.occupation}</td>
-						<td>{person.number_of_cats}</td>
-						<td>{person.daily_water_consumption}</td>
-						<td>{person.location}</td>
-					</tr>
+					<Row
+						key={person.id}
+						{...person}
+						handleClick={() => selectRow(person.id)}
+					/>
 				))}
 			</tbody>
 		</table>
@@ -58,4 +45,3 @@ const Table: React.FC<{
 };
 
 export { Table };
-export type { Person };
