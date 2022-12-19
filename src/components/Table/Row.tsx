@@ -33,7 +33,7 @@ const Row: React.FC<RowProps> = (props) => {
 	return (
 		<tr onClick={handleClick}>
 			{fields.map((field) => (
-				<td>{person[field]}</td>
+				<td key={field}>{person[field]}</td>
 			))}
 		</tr>
 	);
