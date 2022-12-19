@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1",
+		"phone_number": "1234567890",
+		"favorite_color": "red",
+		"security_question": "what is best in life?",
+		"security_answer": "food",
+		"education_level": "high school"
+	},
+	{
+		"id": "2",
+		"phone_number": "1234567890",
+		"favorite_color": "red",
+		"security_question": "what is best in life?",
+		"security_answer": "food",
+		"education_level": "high school"
+	},
+	{
+		"id": "3",
+		"phone_number": "1234567890",
+		"favorite_color": "red",
+		"security_question": "what is best in life?",
+		"security_answer": "food",
+		"education_level": "high school"
+	}
+]
