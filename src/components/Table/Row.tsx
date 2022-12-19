@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 interface Person {
 	id: string;
@@ -39,4 +39,6 @@ const Row: React.FC<RowProps> = (props) => {
 	);
 };
 
-export { Row };
+const MemoizedRow = memo(Row);
+
+export { MemoizedRow };

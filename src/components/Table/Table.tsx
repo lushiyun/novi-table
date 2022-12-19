@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-import { Row } from './Row';
+import { MemoizedRow } from './Row';
 import styles from './table.module.css';
 
 import persons from '../../data/persons.json';
@@ -39,7 +39,7 @@ const Table: React.FC<{
 
 			<tbody className={styles.body}>
 				{persons.map((person) => (
-					<Row
+					<MemoizedRow
 						key={person.id}
 						{...person}
 						handleClick={() => selectRow(person.id)}
@@ -50,4 +50,6 @@ const Table: React.FC<{
 	);
 };
 
-export { Table };
+const MemoizedTable = memo(Table);
+
+export { MemoizedTable };

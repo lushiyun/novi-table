@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { Table } from './components/Table';
+import { MemoizedTable } from './components/Table';
 import './App.css';
 import { Sidebar } from './components/Sidebar';
 
@@ -25,7 +25,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Table onRowClick={handleRowClick} isSidebarOpen={isOpen} />
+			<MemoizedTable onRowClick={handleRowClick} isSidebarOpen={isOpen} />
 
 			<Sidebar
 				id={selectedId as string}
